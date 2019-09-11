@@ -1,0 +1,664 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Tue, 10 Sep 2019 20:34:03 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d2b03ac8f7f2ab439a78b1ef0a94063241568147643; expires=Wed, 09-Sep-20
+        20:34:03 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51442e355a71c98d-SEA
+    body:
+      encoding: UTF-8
+      string: '{"error":"Invalid Request"}'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2019 20:34:03 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=Seattle
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Sep 2019 20:34:04 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d6a7a45a6f09c4b2d842ecf5ff669cf661568147643; expires=Wed, 09-Sep-20
+        20:34:03 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51442e369e46c9ad-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"222943334","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"237385","boundingbox":["47.4810022","47.7341357","-122.459696","-122.224433"],"lat":"47.6038321","lon":"-122.3300624","display_name":"Seattle,
+        King County, Washington, United States of America","class":"place","type":"city","importance":0.80154398538761,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_city.p.20.png"},{"place_id":"152014808","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"291707810","boundingbox":["25.1837689","25.1845505","121.4465868","121.4474398"],"lat":"25.18415975","lon":"121.446939985985","display_name":"Seattle,
+        Tamsui, \u5317\u6295\u91cc, Lanweibu, Tamsui District, New Taipei, 251, Taiwan","class":"landuse","type":"residential","importance":0.31},{"place_id":"59240430","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"4836954932","boundingbox":["20.7199184","20.7200184","-103.3763786","-103.3762786"],"lat":"20.7199684","lon":"-103.3763286","display_name":"Seattle,
+        Los Maestros, Zapopan, Jalisco, 38901, Mexico","class":"place","type":"neighbourhood","importance":0.31},{"place_id":"79863988","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"10671266","boundingbox":["41.961198","41.9657274","-121.9226362","-121.922615"],"lat":"41.9641881","lon":"-121.922629","display_name":"Seattle,
+        Dorris, Siskiyou County, California, United States of America","class":"highway","type":"residential","importance":0.21},{"place_id":"121406999","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"165271257","boundingbox":["14.6696779","14.6703081","121.0988312","121.0994135"],"lat":"14.6696779","lon":"121.0988312","display_name":"Seattle,
+        Vista Real Classica, Batasan Hills, 2nd District, Quezon City, Metro Manila,
+        1808, Philippines","class":"highway","type":"residential","importance":0.21},{"place_id":"86826758","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"22919051","boundingbox":["14.6180684","14.6213139","121.0429669","121.0448923"],"lat":"14.6195488","lon":"121.0440164","display_name":"Seattle,
+        Kaunlaran, Cubao, 4th District, Quezon City, Metro Manila, 1111, Philippines","class":"highway","type":"residential","importance":0.21},{"place_id":"155655686","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"307770120","boundingbox":["28.8472133","28.8488011","-111.978911","-111.9779456"],"lat":"28.8482048","lon":"-111.9782727","display_name":"Seattle,
+        Joyas de Kino, Hermosillo, Sonora, Mexico","class":"highway","type":"residential","importance":0.21},{"place_id":"200229880","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"561843639","boundingbox":["47.4112544","47.4112745","-122.2621269","-122.2608738"],"lat":"47.4112602","lon":"-122.260923","display_name":"Seattle,
+        O''Brien, Kent, King County, Washington, 98032, United States of America","class":"highway","type":"service","importance":0.185},{"place_id":"5915051","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"661057175","boundingbox":["47.6019734","47.6020734","-122.3399149","-122.3398149"],"lat":"47.6020234","lon":"-122.3398649","display_name":"Seattle,
+        Colman Dock, West Edge, Belltown, Seattle, King County, Washington, 98104,
+        United States of America","class":"amenity","type":"ferry_terminal","importance":0.111},{"place_id":"192227735","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"506986989","boundingbox":["51.0219139","51.0220732","4.549491","4.5496973"],"lat":"51.02199295","lon":"4.54959317732394","display_name":"Seattle,
+        4C-4D, Dorp, Bonheiden, Mechelen, Antwerp, Flanders, 2820, Belgium","class":"building","type":"apartments","importance":0.111}]'
+    http_version: 
+  recorded_at: Tue, 10 Sep 2019 20:34:04 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 04:27:47 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d82ef01f43bf395dfbe5c36f4c0d87a9a1568176066; expires=Thu, 10-Sep-20
+        04:27:46 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5146e4228878bcde-SEA
+    body:
+      encoding: UTF-8
+      string: '{"error":"Invalid Request"}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 04:27:47 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=123
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 04:28:42 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc54edcd52c628bc702c99ec8f7725f651568176121; expires=Thu, 10-Sep-20
+        04:28:41 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5146e57888462a53-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"223097082","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"1681535","boundingbox":["45.8939614","46.0194512","14.5289269","14.6180643"],"lat":"45.985384","lon":"14.5728547","display_name":"\u0160kofljica,
+        Upravna Enota Ljubljana, Osrednjeslovenska, 1291, Slovenia","class":"boundary","type":"administrative","importance":0.49826859080806,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_boundary_administrative.p.20.png"},{"place_id":"19405742","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"2001633281","boundingbox":["35.6105291","35.6106291","139.7190457","139.7191457"],"lat":"35.6105791","lon":"139.7190957","display_name":"Mizuho
+        Bank, 420, Shinagawa, Tokyo, 142-0041, Japan","class":"amenity","type":"bank","importance":0.47513524770902,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/money_bank2.p.20.png"},{"place_id":"221046681","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"700902440","boundingbox":["51.5931414","51.5932115","3.7192674","3.7194226"],"lat":"51.5931746","lon":"3.71934451257675","display_name":"123,
+        Noord-Beveland, Zeeland, Netherlands, The Netherlands","class":"waterway","type":"dock","importance":0.435},{"place_id":"217978980","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"684287672","boundingbox":["39.8049109","39.8180045","116.4356767","116.4739143"],"lat":"39.8180045","lon":"116.4608022","display_name":"123,
+        Chaoyang District, Beijing, 100076, China","class":"waterway","type":"river","importance":0.435},{"place_id":"194711298","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"527519296","boundingbox":["34.3609477","34.3624312","70.3336573","70.3338557"],"lat":"34.3616695","lon":"70.333845","display_name":"123,
+        Surkh-Rod, Nangarhar, Afghanistan","class":"waterway","type":"river","importance":0.435},{"place_id":"182654386","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"448773217","boundingbox":["-16.4361715","-16.435035","35.1059787","35.1064954"],"lat":"-16.4358607","lon":"35.1064954","display_name":"123,
+        Nsanje, Southern Region, Malawi","class":"waterway","type":"stream","importance":0.435},{"place_id":"1348317","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"321737947","boundingbox":["14.6249913","14.6649913","120.9687314","121.0087314"],"lat":"14.6449913","lon":"120.9887314","display_name":"123,
+        Caloocan, Metro Manila, 1406, Philippines","class":"place","type":"village","importance":0.385,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"151693820","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"289957771","boundingbox":["51.5304364","51.5310581","9.9062501","9.9076734"],"lat":"51.53078285","lon":"9.90695030393396","display_name":"Abt.
+        123, G\u00f6ttingen, Landkreis G\u00f6ttingen, Lower Saxony, Germany","class":"place","type":"locality","importance":0.35,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_village.p.20.png"},{"place_id":"57050424","licence":"https:\/\/locationiq.com\/attribution","osm_type":"node","osm_id":"4695054970","boundingbox":["51.8852943","51.8853943","102.0141198","102.0142198"],"lat":"51.8853443","lon":"102.0141698","display_name":"\u2116123,
+        \u0421\u043e\u0439\u043e\u0442\u0441\u043a\u043e\u0435 \u0441\u0435\u043b\u044c\u0441\u043a\u043e\u0435
+        \u043f\u043e\u0441\u0435\u043b\u0435\u043d\u0438\u0435, Okinsky Rayon, Buryatia,
+        Far Eastern Federal District, Russia","class":"mountain_pass","type":"yes","importance":0.35},{"place_id":"225073270","licence":"https:\/\/locationiq.com\/attribution","boundingbox":["12.7800154","12.7801154","45.0431849","45.0432849"],"lat":"12.7800654","lon":"45.0432349","display_name":"Sira
+        District, Aden City, Aden Governorate, 123, Yemen","class":"place","type":"postcode","importance":0.335}]'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 04:28:42 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/reverse.php?format=json&key=<KEY>&lat=38.8976998&lon=-77.0365534886228
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 04:38:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d30723c1a52bac70d6f0deea36ee232351568176724; expires=Thu, 10-Sep-20
+        04:38:44 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5146f42dfe92bc90-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"place_id":"332971302034","osm_type":"way","osm_id":"238241022","licence":"https:\/\/locationiq.com\/attribution","lat":"38.897676","lon":"-77.03655","display_name":"1600,
+        Pennsylvania Avenue Northwest, White House Grounds, Washington, District of
+        Columbia, District of Columbia, United States, 20006","boundingbox":["38.897676","38.897676","-77.03655","-77.03655"],"importance":0.225,"address":{"house_number":"1600","road":"Pennsylvania
+        Avenue Northwest","neighbourhood":"White House Grounds","city":"Washington","county":"District
+        of Columbia","state":"District of Columbia","country":"United States","postcode":"20006","country_code":"us"}}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 04:38:44 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/reverse.php?format=json&key=<KEY>&lat=48.4283182&lon=-123.3649533
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 04:38:45 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d05063a835ae7d360f95e2d08381f5d311568176724; expires=Thu, 10-Sep-20
+        04:38:44 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5146f432e895c9b1-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"place_id":"331647791078","osm_type":"node","osm_id":"4409072525","licence":"https:\/\/locationiq.com\/attribution","lat":"48.428289","lon":"-123.36522","display_name":"The
+        Hands of Time: Carrying Books, Chinatown, Victoria, Capital, British Columbia,
+        Canada","boundingbox":["48.428289","48.428289","-123.36522","-123.36522"],"importance":0.2,"address":{"name":"The
+        Hands of Time: Carrying Books","neighbourhood":"Chinatown","city":"Victoria","county":"Capital","state":"British
+        Columbia","country":"Canada","country_code":"ca"}}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 04:38:45 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/reverse.php?format=json&key=<KEY>&lat=41.8902614&lon=12.493087103595503
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 04:38:46 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d07ed54cf8bd7c878448a6389a2c3c5a81568176725; expires=Thu, 10-Sep-20
+        04:38:45 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5146f438a90c2a23-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"place_id":"332146165584","osm_type":"node","osm_id":"1672413257","licence":"https:\/\/locationiq.com\/attribution","lat":"41.89083","lon":"12.493504","display_name":"Colosseo\/Salvi,
+        San Paolo, Rome, Roma, Italy","boundingbox":["41.89083","41.89083","12.493504","12.493504"],"importance":0.2,"address":{"name":"Colosseo\/Salvi","neighbourhood":"San
+        Paolo","city":"Rome","state":"Roma","country":"Italy","country_code":"it"}}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 04:38:46 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=Great%20Pyramid%20of%20Giza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:36:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dd0fa04ecb7a410cc38f44ba01512305e1568180210; expires=Thu, 10-Sep-20
+        05:36:50 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5147494aab8629f3-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"76491632","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"4420397","boundingbox":["29.9781249","29.9801279","31.1330737","31.1354031"],"lat":"29.9791264","lon":"31.1342383751015","display_name":"Great
+        Pyramid of Giza, Cause way, Nazlet Al Siman and Al Sisi, Kom al Akhdar, Giza,
+        Giza Governorate, 12561, Egypt","class":"tourism","type":"attraction","importance":0.97861371244118,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:36:50 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=Great%20Pyramid%20of%20Giza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:36:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dcd23791b0b5b313e1115a2468aa007691568180210; expires=Thu, 10-Sep-20
+        05:36:50 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5147494bdd2ae386-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"76491632","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"4420397","boundingbox":["29.9781249","29.9801279","31.1330737","31.1354031"],"lat":"29.9791264","lon":"31.1342383751015","display_name":"Great
+        Pyramid of Giza, Cause way, Nazlet Al Siman and Al Sisi, Kom al Akhdar, Giza,
+        Giza Governorate, 12561, Egypt","class":"tourism","type":"attraction","importance":0.97861371244118,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:36:50 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/directions/driving/31.1342383751015,29.9791264;31.1342383751015,29.9791264?key=<KEY>&steps=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:36:50 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d86a9365166f0a51b1a1f0022c928e4921568180210; expires=Thu, 10-Sep-20
+        05:36:50 GMT; path=/; domain=.locationiq.org; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Unwired Labs
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5147494d1cd7bb64-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"Ok","waypoints":[{"hint":"jTGkjZcxpI1MAAAAAAAAACkAAAAnAAAAXJVSQgAAAACFeuRB4JQyQUwAAAAAAAAAKQAAACcAAABlEAEA2BzbAVB5yQEeEtsB9nHJAQIAbw4DhJX7","location":[31.136984,29.981008],"name":""},{"hint":"jTGkjZcxpI1MAAAAAAAAACkAAAAnAAAAXJVSQgAAAACFeuRB4JQyQUwAAAAAAAAAKQAAACcAAABlEAEA2BzbAVB5yQEeEtsB9nHJAQIAbw4DhJX7","location":[31.136984,29.981008],"name":""}],"routes":[{"legs":[{"steps":[{"intersections":[{"out":0,"entry":[true],"location":[31.136984,29.981008],"bearings":[230]}],"driving_side":"right","geometry":"it~uDcm`}D??","duration":0,"distance":0,"name":"","weight":0,"mode":"driving","maneuver":{"bearing_after":230,"bearing_before":0,"type":"depart","location":[31.136984,29.981008]}},{"intersections":[{"in":0,"entry":[true],"location":[31.136984,29.981008],"bearings":[50]}],"driving_side":"right","geometry":"it~uDcm`}D","duration":0,"distance":0,"name":"","weight":0,"mode":"driving","maneuver":{"bearing_after":0,"bearing_before":230,"type":"arrive","location":[31.136984,29.981008]}}],"weight":0,"distance":0,"summary":"","duration":0}],"weight_name":"routability","geometry":"it~uDcm`}D??","weight":0,"distance":0,"duration":0}]}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:36:51 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=Cairo,%20Egypt
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:37:43 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=df4a262c8a3c707c0464a7c78b7303b071568180263; expires=Thu, 10-Sep-20
+        05:37:43 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51474a95dce3e35e-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"223547304","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"5466227","boundingbox":["29.7483062","30.3209168","31.2200331","31.9090054"],"lat":"30.048819","lon":"31.243666","display_name":"Cairo,
+        Cairo Governorate, Egypt","class":"place","type":"city","importance":0.90792534689416,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_place_city.p.20.png"},{"place_id":"223424898","licence":"https:\/\/locationiq.com\/attribution","osm_type":"relation","osm_id":"4103336","boundingbox":["29.7483062","30.3209168","31.2200331","31.9090054"],"lat":"30.0352073","lon":"31.5633670632654","display_name":"Cairo
+        Governorate, Egypt","class":"boundary","type":"administrative","importance":0.5566874034691,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_boundary_administrative.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:37:43 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/search.php?format=json&key=<KEY>&q=Great%20Pyramid%20of%20Giza
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:37:43 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d9043948380a21ed7342bfa54b1c254e11568180263; expires=Thu, 10-Sep-20
+        05:37:43 GMT; path=/; domain=.locationiq.org; HttpOnly
+      X-Powered-By:
+      - LocationIQ
+      Access-Control-Allow-Origin:
+      - "*"
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51474a978c2329db-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"place_id":"76491632","licence":"https:\/\/locationiq.com\/attribution","osm_type":"way","osm_id":"4420397","boundingbox":["29.9781249","29.9801279","31.1330737","31.1354031"],"lat":"29.9791264","lon":"31.1342383751015","display_name":"Great
+        Pyramid of Giza, Cause way, Nazlet Al Siman and Al Sisi, Kom al Akhdar, Giza,
+        Giza Governorate, 12561, Egypt","class":"tourism","type":"attraction","importance":0.97861371244118,"icon":"https:\/\/locationiq.org\/static\/images\/mapicons\/poi_point_of_interest.p.20.png"}]'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:37:43 GMT
+- request:
+    method: get
+    uri: https://us1.locationiq.org/v1/directions/driving/31.243666,30.048819;31.1342383751015,29.9791264?key=<KEY>&steps=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 11 Sep 2019 05:37:44 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d65e99dd80331bdc632e1f8a8bbfaf27d1568180263; expires=Thu, 10-Sep-20
+        05:37:43 GMT; path=/; domain=.locationiq.org; HttpOnly
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - Unwired Labs
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 51474a98efc2e382-SEA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"code":"Ok","waypoints":[{"hint":"UldDhJ_vw4UxAAAASgAAAAAAAAAAAAAANrkHQgt6TEIAAAAAAAAAADEAAABKAAAAAAAAAAAAAABlEAEAE7zcATyCygGSvdwBM4LKAQAAXwsDhJX7","location":[31.243283,30.048828],"name":"\u0634\u0627\u0631\u0639
+        \u062c\u0648\u0627\u062f \u062d\u0633\u0646\u064a"},{"hint":"jTGkjZcxpI1MAAAAAAAAACkAAAAnAAAAXJVSQgAAAACFeuRB4JQyQUwAAAAAAAAAKQAAACcAAABlEAEA2BzbAVB5yQEeEtsB9nHJAQIAbw4DhJX7","location":[31.136984,29.981008],"name":""}],"routes":[{"legs":[{"steps":[{"intersections":[{"out":0,"entry":[true],"location":[31.243283,30.048828],"bearings":[1]}],"driving_side":"right","geometry":"e|kvDoeu}D{@A","duration":5.5,"distance":34,"name":"\u0634\u0627\u0631\u0639
+        \u062c\u0648\u0627\u062f \u062d\u0633\u0646\u064a","weight":5.5,"mode":"driving","maneuver":{"bearing_after":1,"location":[31.243283,30.048828],"type":"depart","bearing_before":0,"modifier":"right"}},{"intersections":[{"out":1,"in":2,"entry":[true,true,false,false],"location":[31.243292,30.049134],"bearings":[0,75,180,255]}],"driving_side":"right","geometry":"a~kvDqeu}Dm@iC?C?C@A@E","duration":5.2,"distance":79.4,"name":"\u0634\u0627\u0631\u0639
+        \u0642\u0635\u0631 \u0627\u0644\u0646\u064a\u0644","weight":5.2,"mode":"driving","maneuver":{"bearing_after":68,"location":[31.243292,30.049134],"type":"turn","bearing_before":1,"modifier":"right"}},{"intersections":[{"out":0,"in":1,"entry":[true,false,false],"location":[31.244064,30.04934],"bearings":[135,285,330]},{"out":0,"in":3,"entry":[true,true,false,false],"location":[31.244278,30.049363],"bearings":[9,67,205,208]}],"driving_side":"right","geometry":"k_lvDkju}DBEBE@GAGAECEECG?E?","duration":1.8,"distance":33.1,"name":"\u0639\u0645\u0627\u062f
+        \u0627\u0644\u062f\u064a\u0646","weight":1.8,"mode":"driving","maneuver":{"exit":2,"bearing_after":140,"location":[31.244064,30.04934],"type":"roundabout","bearing_before":98,"modifier":"right"}},{"intersections":[{"out":2,"in":0,"entry":[false,true,true],"location":[31.244278,30.049428],"bearings":[172,330,335]},{"out":0,"in":2,"entry":[true,true,false,false],"location":[31.244226,30.050339],"bearings":[0,90,180,270]}],"driving_side":"right","geometry":"}_lvDwku}DWLE@G@E?iCGcDE","duration":24.2,"distance":194.4,"name":"\u0639\u0645\u0627\u062f
+        \u0627\u0644\u062f\u064a\u0646","weight":24.2,"mode":"driving","maneuver":{"exit":2,"bearing_after":333,"location":[31.244278,30.049428],"type":"exit
+        roundabout","bearing_before":351,"modifier":"straight"}},{"intersections":[{"out":3,"in":2,"entry":[true,false,false,true],"location":[31.244259,30.051159],"bearings":[0,90,180,270]},{"out":3,"in":1,"entry":[false,false,true,true],"location":[31.242438,30.051181],"bearings":[0,90,180,270]}],"driving_side":"right","geometry":"wjlvDsku}D?NA~BAzECbH","duration":20,"distance":315.4,"name":"\u0634\u0627\u0631\u0639
+        \u0639\u062f\u0644\u064a","weight":20,"mode":"driving","maneuver":{"bearing_after":270,"location":[31.244259,30.051159],"type":"turn","bearing_before":1,"modifier":"left"}},{"intersections":[{"out":2,"in":1,"entry":[false,false,true],"location":[31.240983,30.051199],"bearings":[30,90,210]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.240935,30.05114],"bearings":[30,210,300]},{"out":2,"in":0,"entry":[false,true,true,false],"location":[31.240475,30.050497],"bearings":[30,90,210,300]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.240289,30.050213],"bearings":[30,120,210]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.240011,30.049788],"bearings":[30,210,300]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.239791,30.049453],"bearings":[30,150,210]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.239561,30.049102],"bearings":[30,210,300]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.23931,30.048718],"bearings":[30,165,210]}],"driving_side":"right","geometry":"_klvDcwt}DJF~BzAx@d@rAv@bAj@dAl@\\Rl@\\jDnBDDLF","duration":32.2,"distance":442.8,"name":"\u0634\u0627\u0631\u0639
+        \u0637\u0644\u0639\u062a \u062d\u0631\u0628","weight":32.2,"mode":"driving","maneuver":{"bearing_after":213,"location":[31.240983,30.051199],"type":"turn","bearing_before":270,"modifier":"left"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.238678,30.047755],"bearings":[30,135,285]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.238353,30.047697],"bearings":[45,210,285]}],"driving_side":"right","geometry":"oukvDwht}DCL?L@LDLFHLDLBLC","maneuver":{"exit":2,"bearing_after":288,"location":[31.238678,30.047755],"type":"rotary","bearing_before":209,"modifier":"right"},"duration":5.3,"distance":58.4,"name":"\u0642\u0635\u0631
+        \u0627\u0644\u0646\u064a\u0644","rotary_name":"\u0645\u064a\u062f\u0627\u0646
+        \u0637\u0644\u0639\u062a \u062d\u0631\u0628","weight":5.3,"mode":"driving"},{"intersections":[{"out":1,"in":2,"entry":[true,true,false],"location":[31.238319,30.047494],"bearings":[150,255,345]},{"out":2,"in":0,"entry":[false,false,true,true],"location":[31.234914,30.046399],"bearings":[75,165,255,345]}],"driving_side":"right","geometry":"yskvDoft}Dz@bEfA~EtAdGBPbAA","duration":25.9,"distance":396,"name":"\u0642\u0635\u0631
+        \u0627\u0644\u0646\u064a\u0644","weight":25.9,"mode":"driving","maneuver":{"exit":2,"bearing_after":248,"location":[31.238319,30.047494],"type":"exit
+        rotary","bearing_before":167,"modifier":"right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true,false],"location":[31.234834,30.046044],"bearings":[0,165,345]},{"out":1,"in":2,"entry":[true,true,false],"location":[31.235225,30.045145],"bearings":[105,165,345]}],"driving_side":"right","geometry":"wjkvDups}D\\IPGvBy@HCfBW","duration":9.7,"distance":166,"name":"\u0645\u064a\u0631\u062a
+        \u0628\u0627\u0634\u0627","weight":9.7,"mode":"driving","maneuver":{"bearing_after":161,"location":[31.234834,30.046044],"type":"turn","bearing_before":177,"modifier":"straight"}},{"intersections":[{"out":2,"in":3,"entry":[false,true,true,false],"location":[31.235345,30.044626],"bearings":[45,195,240,345]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.233744,30.04428],"bearings":[0,75,255]},{"out":2,"in":1,"entry":[false,false,true],"location":[31.232094,30.044027],"bearings":[60,75,255]},{"out":2,"in":1,"entry":[false,false,true],"location":[31.231712,30.043978],"bearings":[30,75,255]}],"driving_side":"right","geometry":"}akvD}ss}DR^Nd@F~@XzDp@hIHjA@P","duration":20.4,"distance":368.7,"name":"\u0627\u0644\u062a\u062d\u0631\u064a\u0631","weight":20.4,"mode":"driving","maneuver":{"exit":1,"bearing_after":232,"location":[31.235345,30.044626],"type":"exit
+        rotary","bearing_before":167,"modifier":"right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true],"location":[31.23162,30.043966],"bearings":[75,270]},{"out":1,"in":0,"entry":[false,true],"location":[31.227547,30.043514],"bearings":[90,270]}],"driving_side":"right","geometry":"y}jvDs|r}DzAlXAj@","duration":23.3,"distance":416.4,"name":"\u0643\u0648\u0628\u0631\u0649
+        \u0642\u0635\u0631 \u0627\u0644\u0646\u064a\u0644","weight":23.3,"mode":"driving","maneuver":{"bearing_after":261,"location":[31.23162,30.043966],"type":"new
+        name","bearing_before":260,"modifier":"straight"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.227329,30.043517],"bearings":[90,165,330]}],"driving_side":"right","geometry":"_{jvDyar}DIF","duration":0.4,"distance":6.6,"name":"\u0645\u064a\u062f\u0627\u0646
+        \u0627\u0644\u062c\u0632\u064a\u0631\u0629","weight":0.4,"mode":"driving","maneuver":{"bearing_after":326,"location":[31.227329,30.043517],"type":"end
+        of road","bearing_before":270,"modifier":"right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true,true],"location":[31.227292,30.043567],"bearings":[150,315,330]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.226831,30.043388],"bearings":[0,165,330]}],"driving_side":"right","geometry":"i{jvDqar}DIJCNAPBNHLJHLDJ?JC","duration":4.9,"distance":72.5,"name":"\u0645\u064a\u062f\u0627\u0646
+        \u0627\u0644\u062c\u0632\u064a\u0631\u0629","weight":4.9,"mode":"driving","maneuver":{"bearing_after":307,"location":[31.227292,30.043567],"type":"fork","bearing_before":326,"modifier":"slight
+        left"}},{"intersections":[{"out":1,"in":2,"entry":[true,true,false],"location":[31.226852,30.043326],"bearings":[150,240,345]},{"out":1,"in":0,"entry":[false,true],"location":[31.221631,30.040471],"bearings":[75,255]},{"out":1,"in":0,"entry":[false,true],"location":[31.220264,30.040148],"bearings":[75,255]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.220241,30.040142],"bearings":[75,255,285]}],"driving_side":"right","geometry":"yyjvDy~q}D^n@rDdIpHzNRp@`@nBRfBLdA\\bB@BH|@","duration":45.3,"distance":766.4,"name":"\u0634\u0627\u0631\u0639
+        \u0627\u0644\u062a\u062d\u0631\u064a\u0631","weight":45.3,"mode":"driving","maneuver":{"bearing_after":232,"location":[31.226852,30.043326],"type":"turn","bearing_before":163,"modifier":"right"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.219927,30.040086],"bearings":[75,165,330]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.219895,30.040129],"bearings":[45,150,300]}],"driving_side":"right","geometry":"qejvDqsp}DGDGJEJCT","duration":3.4,"distance":30.5,"name":"\u0645\u064a\u062f\u0627\u0646
+        \u0627\u0644\u062c\u0644\u0627\u0621","weight":3.4,"mode":"driving","maneuver":{"bearing_after":326,"location":[31.219927,30.040086],"type":"end
+        of road","bearing_before":257,"modifier":"right"}},{"intersections":[{"out":2,"in":1,"entry":[false,false,true,false],"location":[31.219666,30.040216],"bearings":[30,120,240,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.219456,30.040118],"bearings":[60,210,300]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.219421,30.040061],"bearings":[30,195,255]}],"driving_side":"right","geometry":"kfjvD}qp}D@JBJDHFFJFJBJATI","duration":3.6,"distance":58.4,"name":"\u0645\u064a\u062f\u0627\u0646
+        \u0627\u0644\u062c\u0644\u0627\u0621","weight":3.6,"mode":"driving","maneuver":{"bearing_after":236,"location":[31.219666,30.040216],"type":"turn","bearing_before":296,"modifier":"left"}},{"intersections":[{"out":0,"in":2,"entry":[true,false,false],"location":[31.219462,30.039825],"bearings":[135,270,345]},{"out":0,"in":2,"entry":[true,false,false],"location":[31.219472,30.039817],"bearings":[135,225,315]},{"out":1,"in":2,"entry":[true,true,false],"location":[31.219542,30.039768],"bearings":[105,195,315]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.219474,30.039543],"bearings":[15,30,195]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.218862,30.03785],"bearings":[15,195,285]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.21855,30.037009],"bearings":[15,180,285]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.21855,30.036762],"bearings":[0,15,195]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.218352,30.036173],"bearings":[15,195,285]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.218056,30.035371],"bearings":[15,195,285]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.21779,30.034602],"bearings":[15,195,285]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.217478,30.03375],"bearings":[15,195,285]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.217286,30.033107],"bearings":[15,105,195]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.216164,30.030168],"bearings":[15,180,315]}],"driving_side":"right","geometry":"}cjvDspp}D@AHMl@LJ@rBj@fBf@hBb@fD|@d@BJCtBf@~Cx@xCt@hD|@~Bd@nFnAdBj@nAd@jBj@x@RRArBClBC~@E","duration":73.2,"distance":1301,"name":"\u0634\u0627\u0631\u0644
+        \u062f\u064a\u062c\u0648\u0644","weight":73.2,"mode":"driving","maneuver":{"bearing_after":132,"location":[31.219462,30.039825],"type":"turn","bearing_before":157,"modifier":"slight
+        left"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.216235,30.028617],"bearings":[0,90,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.216131,30.028531],"bearings":[30,180,255]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.21617,30.02816],"bearings":[0,135,270]}],"driving_side":"right","geometry":"{}gvDo|o}DDJJHhAGDG?I","maneuver":{"exit":2,"bearing_after":243,"location":[31.216235,30.028617],"type":"rotary","bearing_before":175,"modifier":"right"},"duration":5.5,"distance":65.8,"name":"\u0634\u0627\u0631\u0639
+        \u0634\u0627\u0631\u0644 \u062f\u064a\u062c\u0648\u0644","rotary_name":"\u0645\u064a\u062f\u0627\u0646
+        \u0627\u0644\u0646\u0647\u0636\u0629","weight":5.5,"mode":"driving"},{"intersections":[{"out":1,"in":2,"entry":[true,true,false],"location":[31.216263,30.028126],"bearings":[90,180,270]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.216476,30.025306],"bearings":[0,75,180]}],"driving_side":"right","geometry":"yzgvDs|o}D~@IbFQdDGhBGlBAbENdFL","duration":34,"distance":612.6,"name":"\u0634\u0627\u0631\u0639
+        \u0634\u0627\u0631\u0644 \u062f\u064a\u062c\u0648\u0644","weight":34,"mode":"driving","maneuver":{"exit":2,"bearing_after":171,"location":[31.216263,30.028126],"type":"exit
+        rotary","bearing_before":95,"modifier":"right"}},{"intersections":[{"out":2,"in":0,"entry":[false,true,true],"location":[31.216342,30.022629],"bearings":[0,180,195]}],"driving_side":"right","geometry":"mxfvDc}o}Dx@H`Jb@","duration":12.8,"distance":230.1,"name":"\u0634\u0627\u0631\u0639
+        \u0634\u0627\u0631\u0644 \u062f\u064a\u062c\u0648\u0644","weight":12.8,"mode":"driving","maneuver":{"bearing_after":188,"location":[31.216342,30.022629],"type":"fork","bearing_before":181,"modifier":"slight
+        right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true,true],"location":[31.21611,30.020571],"bearings":[0,195,270]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.21598,30.020101],"bearings":[30,90,210]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.215536,30.019449],"bearings":[30,210,300]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.214911,30.018608],"bearings":[30,210,300]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.214277,30.017821],"bearings":[30,210,285]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.213478,30.016711],"bearings":[30,210,270]}],"driving_side":"right","geometry":"qkfvDu{o}Dt@FXFLH`CvAfD|B|C|Bf@ZtDbCXTfF~D","duration":37.8,"distance":678.7,"name":"\u0634\u0627\u0631\u0639
+        \u0645\u0631\u0627\u062f","weight":37.8,"mode":"driving","maneuver":{"bearing_after":187,"location":[31.21611,30.020571],"type":"new
+        name","bearing_before":184,"modifier":"straight"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true,true],"location":[31.212406,30.015421],"bearings":[30,135,255,315]},{"out":2,"in":1,"entry":[false,false,true,true],"location":[31.211526,30.015222],"bearings":[30,75,255,345]}],"driving_side":"right","geometry":"kkevDqdo}Df@nDt@dF","duration":11.2,"distance":201.9,"name":"\u0634\u0627\u0631\u0639
+        \u0627\u0644\u0647\u0631\u0645","weight":11.2,"mode":"driving","maneuver":{"bearing_after":254,"location":[31.212406,30.015421],"type":"new
+        name","bearing_before":215,"modifier":"slight right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true,true],"location":[31.210383,30.014945],"bearings":[75,240,255]},{"out":2,"in":0,"entry":[false,true,true,false],"location":[31.20891,30.013661],"bearings":[30,180,210,300]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.208302,30.012858],"bearings":[30,210,240]},{"classes":["tunnel"],"out":1,"in":0,"entry":[false,true],"location":[31.207156,30.011887],"bearings":[45,240]},{"out":1,"in":0,"entry":[false,true],"location":[31.205977,30.011205],"bearings":[60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.204748,30.010768],"bearings":[60,75,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.204458,30.01065],"bearings":[0,60,240]}],"driving_side":"right","geometry":"mhevD{wn}D~@~BdAbAzB`B~CxBPL`AhAlBjCfCjFp@`Cd@rBVx@Tz@","duration":43.9,"distance":793.3,"name":"\u0627\u0644\u0647\u0631\u0645","weight":43.9,"mode":"driving","maneuver":{"bearing_after":240,"location":[31.210383,30.014945],"type":"turn","bearing_before":253,"modifier":"slight
+        left"}},{"intersections":[{"out":2,"in":1,"entry":[false,false,true],"location":[31.204164,30.010543],"bearings":[0,60,255]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.203782,30.010416],"bearings":[75,255,315]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.202755,30.010051],"bearings":[0,75,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.201496,30.00954],"bearings":[15,60,240]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.200763,30.00926],"bearings":[60,195,255]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.200461,30.009154],"bearings":[0,75,255]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.199924,30.008964],"bearings":[75,135,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.198622,30.008474],"bearings":[0,60,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.197383,30.007986],"bearings":[60,255,345]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.196766,30.007768],"bearings":[0,75,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.196346,30.007594],"bearings":[0,60,240]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.195441,30.007186],"bearings":[60,195,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.19476,30.006928],"bearings":[60,240,270]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.194498,30.006831],"bearings":[60,120,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.193721,30.006544],"bearings":[45,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.192528,30.006095],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.1914,30.005668],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.190758,30.005428],"bearings":[0,60,240]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.190177,30.005209],"bearings":[60,240,330]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.187888,30.004348],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[false,false,true],"location":[31.186926,30.003986],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.185769,30.003552],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.185092,30.003297],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.184457,30.003058],"bearings":[0,60,240]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.183932,30.00286],"bearings":[0,60,240]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.183591,30.002737],"bearings":[60,180,240]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.182575,30.00235],"bearings":[60,120,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.182294,30.002244],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.181478,30.001937],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.181056,30.001778],"bearings":[60,240,315]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.179155,30.001062],"bearings":[60,240,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.178088,30.00066],"bearings":[60,240,345]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.176799,30.000172],"bearings":[60,195,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.176126,29.999917],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.174569,29.999328],"bearings":[60,240,300]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.173797,29.999036],"bearings":[0,60,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.173119,29.998779],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.170987,29.997972],"bearings":[60,255,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.169213,29.997368],"bearings":[75,240,330]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.16738,29.996661],"bearings":[60,180,240]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.166945,29.996498],"bearings":[60,105,255]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.166656,29.996399],"bearings":[75,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.165698,29.996039],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.164719,29.995639],"bearings":[60,240,300]},{"out":2,"in":1,"entry":[true,false,true],"location":[31.163756,29.995293],"bearings":[45,60,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.162456,29.994797],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.160681,29.99414],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.160325,29.994008],"bearings":[60,240,330]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.158759,29.993413],"bearings":[60,180,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.158387,29.993277],"bearings":[60,240,345]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.157842,29.993069],"bearings":[60,105,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.156536,29.992579],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.154977,29.991987],"bearings":[60,240,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.153302,29.991345],"bearings":[60,255,330]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.15213,29.990928],"bearings":[75,195,255]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.151713,29.99078],"bearings":[75,120,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.150727,29.990417],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.14984,29.990088],"bearings":[60,240,345]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.149357,29.989906],"bearings":[60,240,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.148459,29.989579],"bearings":[60,240,315]},{"out":2,"in":1,"entry":[false,false,true],"location":[31.147953,29.989393],"bearings":[0,60,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.14585,29.988598],"bearings":[60,240,330]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.144517,29.988086],"bearings":[60,150,240]},{"out":2,"in":0,"entry":[false,false,true],"location":[31.144243,29.987987],"bearings":[60,150,240]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.143859,29.987839],"bearings":[60,240,345]}],"driving_side":"right","geometry":"{ldvD_qm}DVjAhAjEdBzFv@rCTz@d@jB`BbG~AvFj@xBb@rAnAtDr@fCRr@x@zCvAlFtA`Fn@~Bj@rBPj@n@|BhB~GfA~DvAfFp@fCn@|Bf@hBVbAlAhETx@z@`D^rAnCzJnAtE`B`Gp@dCtBvHx@xCr@fC`DhLvBbJlClJ^tARx@fA~DnAbEdA~D`BbGbCbJXdAvBxHXhAh@lB`BbGtBvHt@hCv@rCPp@rAhF\\rAfAbE`ApDb@~A`ArDd@dB|CbLdBhGRv@\\jAjD|L@f@{@p@KX","duration":368.1,"distance":6644.2,"name":"\u0634\u0627\u0631\u0639
+        \u0627\u0644\u0647\u0631\u0645","weight":368.1,"mode":"driving","maneuver":{"bearing_after":248,"location":[31.204164,30.010543],"type":"new
+        name","bearing_before":246,"modifier":"straight"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.141051,29.987327],"bearings":[120,150,330]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.141023,29.987374],"bearings":[150,240,330]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.140774,29.987268],"bearings":[60,165,315]}],"driving_side":"right","geometry":"y{_vDqfa}DGDRp@fBq@","duration":19.3,"distance":94.4,"name":"","weight":19.3,"mode":"driving","maneuver":{"bearing_after":331,"location":[31.141051,29.987327],"type":"end
+        of road","bearing_before":299,"modifier":"sharp left"}},{"intersections":[{"out":0,"in":2,"entry":[true,false,false],"location":[31.141017,29.986754],"bearings":[75,240,345]},{"out":0,"in":2,"entry":[true,false,false,true],"location":[31.14136,29.986819],"bearings":[90,150,255,330]}],"driving_side":"right","geometry":"ex_vDkfa}DMcACm@","duration":3.1,"distance":56.2,"name":"\u0627\u0644\u0647\u0631\u0645","weight":3.1,"mode":"driving","maneuver":{"bearing_after":77,"location":[31.141017,29.986754],"type":"end
+        of road","bearing_before":157,"modifier":"left"}},{"intersections":[{"out":0,"in":2,"entry":[true,false,false],"location":[31.141591,29.986837],"bearings":[75,240,270]}],"driving_side":"right","geometry":"wx_vD}ia}Dc@aCg@cB","duration":8.5,"distance":118.4,"name":"\u0634\u0627\u0631\u0639
+        \u0627\u0644\u0647\u0631\u0645","weight":8.5,"mode":"driving","maneuver":{"bearing_after":70,"location":[31.141591,29.986837],"type":"turn","bearing_before":84,"modifier":"straight"}},{"intersections":[{"out":1,"in":2,"entry":[true,true,false],"location":[31.142735,29.987222],"bearings":[60,150,240]}],"driving_side":"right","geometry":"c{_vDcqa}D|@a@nEyC~AgAb@c@","duration":20.8,"distance":266.3,"name":"\u0634
+        \u0632\u063a\u0644\u0648\u0644","weight":20.8,"mode":"driving","maneuver":{"bearing_after":154,"location":[31.142735,29.987222],"type":"turn","bearing_before":64,"modifier":"right"}},{"intersections":[{"out":2,"in":3,"entry":[true,true,true,false],"location":[31.144216,29.985206],"bearings":[60,135,240,315]}],"driving_side":"right","geometry":"qn_vDkza}DRf@t@|BZhAb@nA","duration":27,"distance":171.5,"name":"","weight":27,"mode":"driving","maneuver":{"bearing_after":240,"location":[31.144216,29.985206],"type":"turn","bearing_before":139,"modifier":"right"}},{"intersections":[{"out":2,"in":0,"entry":[false,false,true],"location":[31.142624,29.984517],"bearings":[60,150,330]}],"driving_side":"right","geometry":"gj_vDkpa}DuFdC","duration":12,"distance":151.8,"name":"\u0637\u0631\u064a\u0642
+        \u0627\u0644\u0645\u0646\u0635\u0648\u0631\u064a\u0629","weight":12,"mode":"driving","maneuver":{"bearing_after":333,"location":[31.142624,29.984517],"type":"turn","bearing_before":241,"modifier":"right"}},{"intersections":[{"out":1,"in":0,"entry":[false,true,true],"location":[31.141946,29.985749],"bearings":[150,255,330]},{"out":1,"in":0,"entry":[false,true,false],"location":[31.141712,29.985639],"bearings":[45,150,330]},{"out":0,"in":2,"entry":[true,true,false],"location":[31.142539,29.984066],"bearings":[165,255,345]}],"driving_side":"right","geometry":"}q_vDela}DD`@NLtGyCb@KpBWHCt@KLC`BUFBtEu@","duration":33.8,"distance":510.3,"name":"\u0637\u0631\u064a\u0642
+        \u0627\u0644\u0645\u0646\u0635\u0648\u0631\u064a\u0629","weight":33.8,"mode":"driving","maneuver":{"bearing_after":255,"location":[31.141946,29.985749],"type":"continue","bearing_before":333,"modifier":"uturn"}},{"intersections":[{"out":1,"in":2,"entry":[true,true,false],"location":[31.143115,29.981513],"bearings":[165,270,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.142048,29.981461],"bearings":[75,255,345]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.141636,29.981368],"bearings":[75,240,345]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.141359,29.981256],"bearings":[60,165,255]},{"out":1,"in":0,"entry":[false,true,true],"location":[31.141255,29.981226],"bearings":[75,255,345]},{"out":2,"in":0,"entry":[false,true,true,true],"location":[31.141027,29.98116],"bearings":[75,150,240,345]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.140593,29.980999],"bearings":[60,150,255]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.140342,29.980914],"bearings":[75,165,255]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.139903,29.980774],"bearings":[75,165,255]}],"driving_side":"right","geometry":"mw~uDosa}DAdCDp@D\\PpATv@DRLl@^vABJLd@Nr@Jb@Nt@","duration":51.4,"distance":352.3,"name":"","weight":51.4,"mode":"driving","maneuver":{"bearing_after":270,"location":[31.143115,29.981513],"type":"turn","bearing_before":167,"modifier":"right"}},{"intersections":[{"out":2,"in":0,"entry":[false,true,true],"location":[31.139628,29.980688],"bearings":[75,165,330]}],"driving_side":"right","geometry":"ir~uDu}`}DQN{@r@k@f@","duration":16.2,"distance":85.3,"name":"","weight":16.2,"mode":"driving","maneuver":{"bearing_after":322,"location":[31.139628,29.980688],"type":"end
+        of road","bearing_before":248,"modifier":"right"}},{"intersections":[{"out":2,"in":1,"entry":[true,false,true],"location":[31.139093,29.981299],"bearings":[60,135,240]}],"driving_side":"right","geometry":"cv~uDiz`}DbBxE","duration":19.4,"distance":118.9,"name":"","weight":19.4,"mode":"driving","maneuver":{"bearing_after":241,"location":[31.139093,29.981299],"type":"turn","bearing_before":322,"modifier":"left"}},{"intersections":[{"out":2,"in":0,"entry":[false,true,true],"location":[31.138,29.980802],"bearings":[60,150,330]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.137917,29.980952],"bearings":[150,240,315]},{"out":2,"in":0,"entry":[false,true,true],"location":[31.137624,29.981171],"bearings":[120,225,345]}],"driving_side":"right","geometry":"_s~uDos`}D]N[XO`@QFI`@z@tA","duration":19.9,"distance":137.9,"name":"","weight":19.9,"mode":"driving","maneuver":{"bearing_after":333,"location":[31.138,29.980802],"type":"turn","bearing_before":241,"modifier":"right"}},{"intersections":[{"in":0,"entry":[true],"location":[31.136984,29.981008],"bearings":[50]}],"driving_side":"right","geometry":"it~uDcm`}D","duration":0,"distance":0,"name":"","weight":0,"mode":"driving","maneuver":{"bearing_after":0,"bearing_before":230,"type":"arrive","location":[31.136984,29.981008]}}],"weight":1049,"distance":16029.8,"summary":"\u0634\u0627\u0631\u0644
+        \u062f\u064a\u062c\u0648\u0644, \u0634\u0627\u0631\u0639 \u0627\u0644\u0647\u0631\u0645","duration":1049}],"weight_name":"routability","geometry":"e|kvDoeu}DiBgEgJBGnSnTjMrGbWpJiArDhr@`Qj[zBrQd}@rSn}@Xt\\rU|CtObPbOtzCpxKy@jDfBq@}AwIpKgHhC~H_FtDxXyGbDxTyBjBx@dL","weight":1049,"distance":16029.8,"duration":1049}]}'
+    http_version: 
+  recorded_at: Wed, 11 Sep 2019 05:37:44 GMT
+recorded_with: VCR 5.0.0

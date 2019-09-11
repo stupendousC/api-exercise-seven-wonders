@@ -3,3 +3,6 @@
 
 # Ada Library Information
 *.ali
+
+# locationiq.com API key in there
+.env
